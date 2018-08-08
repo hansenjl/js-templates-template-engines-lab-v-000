@@ -7,7 +7,7 @@ function init(){
   var postTemplate = document.getElementById("post-template").innerHTML;
   var postTemplateFn = _.template(postTemplate);
   
-  var 
+  var content = document.getElementsByName("content").innerHTML
 
   var main = document.getElementsByTagName('main')[0];
  
