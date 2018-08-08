@@ -4,7 +4,7 @@ function init(){
   //create template function
   var templateFn = _.template(pageTemplate);
 
-  var main = document.getElementByTagName('main')[0];
+  var main = document.getElementsByTagName('main')[0];
  
   //append rather than replace!
   main.innerHTML = templateFn();
