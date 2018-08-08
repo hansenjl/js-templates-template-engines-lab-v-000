@@ -4,8 +4,8 @@ function init(){
   //create template function
   var templateFn = _.template(pageTemplate);
 
-  var main = document.getElementByTagName('main');
+  var main = document.getElementByTagName('main')[0];
  
   //append rather than replace!
-  commentsDiv.innerHTML = templateFn();
+  main.innerHTML = templateFn();
 }
