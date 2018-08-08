@@ -3,12 +3,9 @@ function init(){
  
   //create template function
   var templateFn = _.template(pageTemplate);
- 
-  
- 
-  //execute template function with JSON object for the interpolated values
-  var templateHTML = templateFn({ 'comment': comment, 'commenter': commenter });
+
+  var main = document.getElementByTagName('main');
  
   //append rather than replace!
-  commentsDiv.innerHTML += templateHTML;
+  commentsDiv.innerHTML = templateFn();
 }
